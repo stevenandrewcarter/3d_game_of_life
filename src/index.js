@@ -6,7 +6,6 @@ import { HemisphericLight } from "@babylonjs/core/Lights/hemisphericLight";
 import { World } from './world.js'
 
 const size = 25;
-
 // Get the canvas element from the DOM.
 const canvas = document.getElementById("renderCanvas");
 // Associate a Babylon Engine to it.
@@ -29,7 +28,7 @@ light.intensity = 0.7;
 
 // Render every frame
 engine.runRenderLoop(() => {
-    world.update(scene);
+    // world.update(scene);
     scene.render();
 });
 
