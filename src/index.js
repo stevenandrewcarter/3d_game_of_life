@@ -28,10 +28,10 @@ light.intensity = 0.7;
 
 // Render every frame
 engine.runRenderLoop(() => {
-    // world.update(scene);
-    scene.render();
+  world.update(scene);
+  scene.render();
 });
 
-window.addEventListener('resize', function() {
-    engine.resize();
+window.addEventListener('resize', function () {
+  engine.resize();
 });
