@@ -38,8 +38,6 @@ class World {
       for (let y = 0; y < this.dimension.y; y++) {
         for (let z = 0; z < this.dimension.z; z++) {
           this.cells[x][y][z].updateNeighbors();
-          // var color = this.cells[x][y][z].aliveNeighbours / this.cells[x][y][z].neighbours.length;
-          // this.cells[x][y][z].box.material.emissiveColor = new Color4(color, color, color, 1);
         }
       }
     }
